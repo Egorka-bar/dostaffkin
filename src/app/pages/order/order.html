@@ -84,17 +84,17 @@
                     <div class="main-block-title">Контакты</div>
                     <div class="order-fields">
                         <div class="main-field">
-                            <input id="customerName" formConrolName="name" placeholder="Ваше имя" autocomplete="off" />
+                            <input id="customerName" formControlName="name" placeholder="Ваше имя" autocomplete="off" />
                         </div>
                         <div class="main-field">
-                            <input id="customerPhone" formConrolName="phone" placeholder="Ваш телефон" autocomplete="off" inputmode="tel" />
+                            <input id="customerPhone" formControlName="phone" placeholder="Ваш телефон" autocomplete="off" inputmode="tel" />
                         </div>
                     </div>
                 </div>
                 <div class="main-block-info-row extra-info">
                     <div class="main-block-title">Дополнительная информация</div>
                     <div class="main-field textarea">
-                        <textarea id="comment" formConrolName="comment" placeholder="Детали доставки и комментарии"></textarea>
+                        <textarea id="comment" formControlName="comment" placeholder="Детали доставки и комментарии"></textarea>
                     </div>
                 </div>
                 <button id="submit" class="button main-submit-request" type="button" [disabled]="!calculationResult() || orderForm.invalid" (click)="submitOrder()">Отправить
